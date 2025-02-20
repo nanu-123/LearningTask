@@ -24,6 +24,24 @@ In C programming, data types define the type of data a variable can hold, such a
 
 ---
 
+## Fixed-Width Integer Types (from `<stdint.h>`)
+
+Fixed-width integer types are used to guarantee the size of the data type, making code more portable. These types are defined in the `<stdint.h>` header.
+
+| **Data Type**   | **Size (Bytes)** | **Range**                                      |
+|-----------------|------------------|-----------------------------------------------|
+| `int8_t`        | 1                | -128 to 127                                   |
+| `uint8_t`       | 1                | 0 to 255                                      |
+| `int16_t`       | 2                | -32,768 to 32,767                             |
+| `uint16_t`      | 2                | 0 to 65,535                                   |
+| `int32_t`       | 4                | -2,147,483,648 to 2,147,483,647               |
+| `uint32_t`      | 4                | 0 to 4,294,967,295                            |
+| `int64_t`       | 8                | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+| `uint64_t`      | 8                | 0 to 18,446,744,073,709,551,615               |
+
+---
+
+
 ## Explanation of Data Types
 
 1. **`char`**:
