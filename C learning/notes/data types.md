@@ -1,8 +1,10 @@
+# Data Types in C
+
 In C programming, data types define the type of data a variable can hold, such as integers, floating-point numbers, or characters. The size and range of these data types depend on the system architecture (e.g., 16-bit, 32-bit, or 64-bit). Below is a table of the most commonly used data types in C, their typical sizes, and their ranges.
 
 ---
 
-### **Primary Data Types in C**
+## Primary Data Types in C
 
 | **Data Type**       | **Size (Bytes)** | **Range**                                                                 |
 |----------------------|------------------|---------------------------------------------------------------------------|
@@ -22,7 +24,7 @@ In C programming, data types define the type of data a variable can hold, such a
 
 ---
 
-### **Explanation of Data Types**
+## Explanation of Data Types
 
 1. **`char`**:
    - Used to store single characters.
@@ -59,7 +61,8 @@ In C programming, data types define the type of data a variable can hold, such a
 
 ---
 
-### **Derived Data Types**
+## Derived Data Types
+
 - **Arrays**: A collection of elements of the same data type.
 - **Pointers**: Stores memory addresses.
 - **Structures**: A user-defined data type that groups variables of different data types.
@@ -67,7 +70,8 @@ In C programming, data types define the type of data a variable can hold, such a
 
 ---
 
-### **Modifiers**
+## Modifiers
+
 - **`signed`**: Allows positive and negative values (default for `char`, `int`, etc.).
 - **`unsigned`**: Allows only positive values (doubles the positive range).
 - **`short`**: Reduces the size of the data type.
@@ -75,7 +79,8 @@ In C programming, data types define the type of data a variable can hold, such a
 
 ---
 
-### **Example Code**
+## Example Code
+
 ```c
 #include <stdio.h>
 
@@ -94,11 +99,3 @@ int main() {
 
     return 0;
 }
-```
-
----
-
-### **Key Notes**
-- The size of data types can vary across different systems and compilers.
-- Use the `sizeof()` operator to determine the size of a data type on your system.
-- Always choose the appropriate data type based on the range and precision required for your application.
