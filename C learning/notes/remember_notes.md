@@ -35,54 +35,51 @@ int main(void) {
         else
             printf("ok.\n");
 }
-4. Avoid break and continue in Loops
+```
 
-    Avoid using break and continue statements in loops as they can make the code harder to follow.
+## 4. **Avoid break and continue in Loops**
+    - Avoid using break and continue statements in loops as they can make the code harder to follow.
 
-5. Avoid pow for Simple Exponentiations
+---
 
-    The pow function uses computationally expensive methods.
+## 5. **Avoid pow for Simple Exponentiations**
+    - The pow function uses computationally expensive methods.
+    - For simple exponentiations like 𝑥² or 𝑥³, use x * x or x * x * x instead.
 
-    For simple exponentiations like 𝑥² or 𝑥³, use x * x or x * x * x instead.
+---
 
-6. Function Declarations and Definitions
+## 6. **Function Declarations and Definitions**
+    - To avoid compile errors and keep the code well-structured:
+    - Avoid external dependencies in functions to maximize reusability.
+    - Use local variables only and avoid global variables.
 
-    To avoid compile errors and keep the code well-structured:
+---
 
-        Write function declarations at the beginning of the source code, before the main function.
+## 8. **Symbolic Constants for Array Sizes**
+    - Use symbolic constants (e.g., #define) for all array sizes in your program.
+    - This makes the code easier to maintain and modify.
 
-        Write custom function definitions after the main function.
+---
 
-7. Maximize Function Reusability
+## 9. **Array Indexing**
+    - Only use indices in the interval [0, number_of_elements - 1].
+    - Going out of bounds can lead to undefined behavior.
 
-    Avoid external dependencies in functions to maximize reusability.
+---
 
-    Use local variables only and avoid global variables.
+## 10. **Initialize Pointers**
+    - Always initialize pointers to avoid unexpected behavior.
+    - Uninitialized pointers can lead to segmentation faults or undefined behavior.
 
-8. Symbolic Constants for Array Sizes
+---
 
-    Use symbolic constants (e.g., #define) for all array sizes in your program.
+## 11. **Struct Definitions**
+    - A newly defined struct type can only be used after its definition.
+    - Define structure variables in the top section of the source code or in a header file (if applicable).
 
-    This makes the code easier to maintain and modify.
+---
 
-9. Array Indexing
+## **Summary**
+    - Following these best practices will help you write clean, efficient, and maintainable C code. Always prioritize readability and avoid unnecessary complexity.
 
-    Only use indices in the interval [0, number_of_elements - 1].
-
-    Going out of bounds can lead to undefined behavior.
-
-10. Initialize Pointers
-
-    Always initialize pointers to avoid unexpected behavior.
-
-    Uninitialized pointers can lead to segmentation faults or undefined behavior.
-
-11. Struct Definitions
-
-    A newly defined struct type can only be used after its definition.
-
-    Define structure variables in the top section of the source code or in a header file (if applicable).
-
-Summary
-
-Following these best practices will help you write clean, efficient, and maintainable C code. Always prioritize readability and avoid unnecessary complexity.
+---
